@@ -1,14 +1,20 @@
-package java13;
-
+package programs;
+public class dog
+{
+	String name;
+	String color;
+	public dog(String name,String color)
+	{
+		this.name=name;
+		this.color=color;
+	}
+}
 public class parameters {
-	public static void method(int a,int b) {
-		int sum=a+b;
-		System.out.println(sum);
-	}
-	public static void main(String[] args) {
-		int a=5;
-		int b=5;
-		method(a,b);
-	}
+	public static void main(String[] args)
+	 {
+		dog d=new dog("bhairav","brown");
+		System.out.println(d.name);
+		System.out.println(d.color);
+	 }
 
 }
