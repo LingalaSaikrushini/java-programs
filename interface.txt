@@ -1,0 +1,28 @@
+﻿interface faculty
+{
+    void teach();
+}
+interface student
+{
+    void study();
+}
+class education implements faculty,student
+{
+    public void teach()
+    {
+        System.out.println("teacher teaches the class");
+    }
+    public void study()
+    {
+        System.out.println("students study the course");
+    }
+}
+ public class main
+{
+    public static void main(String[] args)
+    {
+        education edu=new education();
+        edu.teach();
+        edu.study();
+    }
+}
