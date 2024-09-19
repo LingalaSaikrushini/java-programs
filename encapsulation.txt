@@ -1,0 +1,33 @@
+﻿import java.util.*;
+class rectangle
+{
+    private int length;
+    private int width;
+    public int getLength()
+    {
+        return length;
+    }
+    public int getWidth()
+    {
+        return width;
+    }
+    public void setLength(int newLength)
+    {
+        this.length=newLength;
+    }
+    public void setWidth(int newWidth)
+    {
+        this.width=newWidth;
+    }
+}
+public class test
+{
+    public static void main(String[] args)
+    {
+        rectangle l=new rectangle();
+        l.setLength(80);
+        l.setWidth(100);
+        System.out.println(l.getLength());
+        System.out.println(l.getWidth());
+    }
+}
